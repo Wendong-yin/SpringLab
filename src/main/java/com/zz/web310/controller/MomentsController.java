@@ -56,6 +56,7 @@ public class MomentsController {
         return momentsService.getMoments(userName);
     }
 
+    // 写的真不错
     @RequestMapping(value ="/info/{userName",method = RequestMethod.DELETE)
     public Boolean deleteMoments(@PathVariable String userName){
         return momentsService.deleteMoments(userName);
